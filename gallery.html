@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+  <!-- Background global -->
+  <div class="bg"></div>
+  <div class="overlay"></div>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <a href="home.html">Home</a>
+    <a href="couple.html">Couple</a>
+    <a href="event.html">Event</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+  </nav>
+
+  <!-- JUDUL -->
+  <section class="gallery-header">
+    <h1>Our Memories</h1>
+    <p>Setiap foto punya cerita</p>
+  </section>
+
+  <!-- GRID GALLERY -->
+  <section class="gallery-container">
+
+    <!-- Kamu tinggal ganti src fotonya -->
+    <div class="gallery-grid">
+
+      <div class="photo"><img src="foto1.jpg"></div>
+      <div class="photo tall"><img src="foto2.jpg"></div>
+      <div class="photo"><img src="foto3.jpg"></div>
+      <div class="photo wide"><img src="foto4.jpg"></div>
+      <div class="photo"><img src="foto5.jpg"></div>
+      <div class="photo"><img src="foto6.jpg"></div>
+      <div class="photo tall"><img src="foto7.jpg"></div>
+      <div class="photo"><img src="foto8.jpg"></div>
+      <div class="photo wide"><img src="foto9.jpg"></div>
+
+    </div>
+
+  </section>
+
+  <!-- MODAL PREVIEW FOTO -->
+  <div class="modal" id="modal">
+    <span class="close" id="close">&times;</span>
+    <img class="modal-img" id="modal-img">
+  </div>
+
+  <script src="gallery.js"></script>
+</body>
+</html>

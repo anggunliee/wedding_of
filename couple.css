@@ -1,0 +1,185 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND GLOBAL */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: url("bg.jpg") no-repeat center center/cover;
+  min-height: 100vh;
+  color: #f5e6d3;
+}
+
+/* OVERLAY */
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(35, 20, 10, 0.72);
+  backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 18px 0;
+  z-index: 10;
+  background: rgba(40, 25, 15, 0.4);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255, 220, 170, 0.15);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e6c8a8;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffffff;
+}
+
+/* SECTION */
+.couple-section {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  padding: 120px 20px 80px;
+  text-align: center;
+  animation: fadeIn 1.5s ease;
+}
+
+/* TITLE */
+.subtitle {
+  letter-spacing: 4px;
+  font-size: 13px;
+  color: #c9a87c;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-family: 'Playfair Display', serif;
+  font-size: 44px;
+  margin-bottom: 60px;
+}
+
+/* CONTAINER */
+.couple-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* PERSON CARD */
+.person {
+  width: 260px;
+  text-align: center;
+}
+
+/* FOTO FRAME */
+.photo-frame {
+  width: 260px;
+  height: 320px;
+  padding: 8px;
+  border-radius: 18px;
+  background: rgba(80, 50, 30, 0.5);
+  border: 1px solid rgba(255,220,170,0.25);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.6),
+    inset 0 0 20px rgba(255,220,170,0.08);
+
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* HOVER */
+.photo-frame:hover {
+  transform: scale(1.04);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.7),
+    0 0 25px rgba(255,200,150,0.15);
+}
+
+/* NAME */
+.name {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+/* DESC */
+.desc {
+  font-size: 14px;
+  color: #d8bfa3;
+  line-height: 1.7;
+}
+
+/* LOVE SYMBOL */
+.love-symbol {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+  color: #e6c8a8;
+  margin: 0 20px;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .couple-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .love-symbol {
+    font-size: 40px;
+    margin: 10px 0;
+  }
+
+  .photo-frame {
+    width: 220px;
+    height: 280px;
+  }
+}
